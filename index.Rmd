@@ -1,0 +1,23 @@
+---
+title: "Zhourong Li"
+author:
+date: 
+output: html_document
+---
+
+# Welcome!
+
+Hello and welcome to my personal website! I am Zhourong Li, a master student in Columbia Mailman School of Public Health, currently major in Biostatistics. 
+
+# Personal Background
+
+Check this link [About me](about.html) for more background about me.
+
+# Other Info
+
+I am from Guangzhou, China, below is a picture of my hometown- Guangzhou. :)
+
+<img src="images/1.jpg" style="width:75%">
+
+
+
