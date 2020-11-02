@@ -17,10 +17,10 @@ Hello and welcome to my personal website! I am a master student currently major 
 
 Check this link [about me](about.html) for more background information about me.           
                  
-                
 ### Data Visualization and Interaction
                      
 Check this link [flex](flexdashboard.html) to see the flexdashboard I created for data visualization and interaction.
+        
                           
 ### Other Info
                      

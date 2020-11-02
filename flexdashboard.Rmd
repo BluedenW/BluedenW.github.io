@@ -56,11 +56,8 @@ noaa_df %>%
   plot_ly(y = ~tmax, color = ~id, type = "box", colors = "viridis")
 ```
 
-### bar chart, count the days where the max temperature > 25 of each station
+### bar chart of the days where the max temperature > 25 for each station
 ```{r}
-x <- list(
-  title = "x Axis"
-)
 
 noaa_df %>% 
   filter(tmax>25)%>%
