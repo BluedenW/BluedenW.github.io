@@ -2,20 +2,32 @@
 title: "Zhourong Li"
 author:
 date: 
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-# Welcome!
+## Welcome!
 
-Hello and welcome to my personal website! I am a master student currently major in Biostatistic in Columbia Mailman School of Public Health. 
+Hello and welcome to my personal website! I am a master student currently major in Biostatistic in Columbia Mailman School of Public Health.            
+                 
+            
+### Personal Background
 
-# Personal Background
-
-Check this link [About me](about.html) for more background information about me.
-
-# Other Info
-
-I am from Guangzhou, China, below is a picture of my hometown- Guangzhou. :)
+Check this link [about me](about.html) for more background information about me.           
+                 
+                
+### Data Visualization and Interaction
+                     
+Check this link [flex](flexdashboard.html) to see the flexdashboard I created for data visualization and interaction.
+                          
+### Other Info
+                     
+If you want to contact me or establish a professional relationship with me, please check the up right buttons.
+              
+               
+I am from Guangzhou, China. Below is a picture of my hometown- Guangzhou.  :)
 
 <img src="images/1.jpg" style="width:75%">
 

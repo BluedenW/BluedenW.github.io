@@ -1,0 +1,72 @@
+---
+title: "flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(dplyr)
+```
+
+We use NOAA dataset for the data visualization and interaction.      
+
+```{r set up figures}
+noaa_df = 
+  ny_noaa%>%
+  janitor::clean_names()%>%
+  select(id,date,tmax,tmin)%>%
+  # filter(date<as.Date("2007-11-07"))
+  filter("2008-1-1" < date & date < "2008-12-31")%>%
+  filter(id=="USC00300668"| id=="USC00302454"  | id=="USC00300961")%>%
+  mutate(tmax = as.numeric(tmax))%>%
+  mutate(tmin = as.numeric(tmin))%>%
+  mutate(tmax = round(tmax/10,digits = 1))%>%
+  mutate(tmin = round(tmin/10,digits = 2))%>%
+  mutate(id=recode(id, USC00300668 ="BIG MOOSE 3 SE",
+                   USC00302454 = "EAST SIDNEY",
+                   USC00300961 = "BRONX"))
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### scatter plot of tmin vs tmax for three stations
+
+```{r}
+noaa_df %>%
+  mutate(text_label = str_c("Id: ", id, "\nDate: ", date)) %>% 
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~id, text = ~text_label, alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### box plot of tmax for each station
+
+```{r}
+noaa_df %>% 
+  plot_ly(y = ~tmax, color = ~id, type = "box", colors = "viridis")
+```
+
+### bar chart, count the days where the max temperature > 25 of each station
+```{r}
+x <- list(
+  title = "x Axis"
+)
+
+noaa_df %>% 
+  filter(tmax>25)%>%
+  count(id)%>%
+  plot_ly(x = ~id, y = ~n, color = ~id, type = "bar",   colors = "viridis")%>%
+  layout(xaxis = list(title = 'Station Name'),
+         yaxis = list(title = 'Number of Records'))
+```
+

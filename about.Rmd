@@ -1,14 +1,15 @@
 ---
 title: "About Me"
-author: "Zhourong Li zl2977"
-date: "2020/11/2"
-output: html_document
+
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-
-My name is Zhourong Li, a Master candidate of Biostatistics at Columbia Mailman School of Public Health (Class of 2022), expect graduating at 2020/05. My research interests includes Biostatistics, Statistics, Data Science and Deep Learning etc.
+##### My name is Zhourong Li, a Master candidate of Biostatistics at Columbia Mailman School of Public Health (Class of 2022), expect graduating at 2020/05. My research interests includes Biostatistics, Statistics, Data Science and Deep Learning etc.
 
 More details can be seen in my resume below.
 
-<iframe src="cv.pdf" width="100%" height="1000px">
+<iframe src="RESUME-Zhourong Li.pdf" width="100%" height="1000px">
 
