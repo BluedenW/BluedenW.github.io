@@ -41,9 +41,7 @@ Column {data-width=650}
 ```{r}
 noaa_df %>%
   mutate(text_label = str_c("Id: ", id, "\nDate: ", date)) %>% 
-  plot_ly(
-    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
-    color = ~id, text = ~text_label, alpha = 0.5)
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers", color = ~id, text = ~text_label, alpha = 0.5)
 ```
 
 Column {data-width=350}
@@ -62,7 +60,7 @@ noaa_df %>%
 noaa_df %>% 
   filter(tmax>25)%>%
   count(id)%>%
-  plot_ly(x = ~id, y = ~n, color = ~id, type = "bar",   colors = "viridis")%>%
+  plot_ly(x = ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")%>%
   layout(xaxis = list(title = 'Station Name'),
          yaxis = list(title = 'Number of Records'))
 ```
