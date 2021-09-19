@@ -10,7 +10,7 @@ output:
 
 ## Welcome!
 
-Hello and welcome to my personal website! I am a master student currently major in Biostatistic in Columbia Mailman School of Public Health.            
+Hello and welcome to Zhourong's personal website! Zhourong is currently a master student major in Biostatistic in Columbia Mailman School of Public Health. Expected to be graduated in May 2022. Zhourong has strong interests in quantitative research, quantitative trading, data science and machine learning. He has strong learning ability, dare to accept challenges, and is willing to collaborate with others.
                  
             
 ### Personal Background
@@ -19,7 +19,9 @@ Check this link [about me](about.html) for more background information about me.
                  
 ### Data Visualization and Interaction
                      
-Check this link [flex](flexdashboard.html) to see the flexdashboard I created for data visualization and interaction.
+Check this link [flexdashboard](flexdashboard.html) to see the flexdashboard I created for data visualization and interaction.
+
+Check this link [World Wine Information](https://bluedenw.shinyapps.io/interactive_map/) to see the Shiny Dashboard project I developed for world wine information and ratings.
         
                           
 ### Other Info
@@ -27,7 +29,7 @@ Check this link [flex](flexdashboard.html) to see the flexdashboard I created fo
 If you want to contact me or establish a professional relationship with me, please check the up right buttons.
               
                
-I am from Guangzhou, China. Below is a picture of my hometown- Guangzhou.  :)
+I am from Guangzhou, China. Below is a picture of my hometown- Guangzhou.
 
 <img src="images/1.jpg" style="width:75%">
 
