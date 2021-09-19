@@ -7,7 +7,7 @@ output:
     toc_float: true
 ---
 
-##### My name is Zhourong Li, a Master candidate of Biostatistics at Columbia Mailman School of Public Health (Class of 2022), expect graduating at 2022/05. My research interests includes Biostatistics, Statistics, Data Science and Deep Learning etc.
+##### My name is Zhourong Li, a Master candidate of Biostatistics at Columbia Mailman School of Public Health (Class of 2022), expect graduating at 2022/05. My research interests include quantitative research, quantitative trading, data science and machine learning etc.
 
 More details can be seen in my resume below.
 

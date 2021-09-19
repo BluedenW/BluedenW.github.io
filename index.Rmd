@@ -21,7 +21,7 @@ Check this link [about me](about.html) for more background information about me.
                      
 Check this link [flexdashboard](flexdashboard.html) to see the flexdashboard I created for data visualization and interaction.
 
-Check this link [World Wine Information](https://bluedenw.shinyapps.io/interactive_map/) to see the Shiny Dashboard project I developed for world wine information and ratings.
+Check this link [World Wine Information](https://bluedenw.shinyapps.io/interactive_map/) to see the Shiny Dashboard project I developed for wines rating information from most countries in the world.
         
                           
 ### Other Info
